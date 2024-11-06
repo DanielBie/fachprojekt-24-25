@@ -1,0 +1,17 @@
+counter,value,type
+instructions,1.48407e+09,baseline
+cycles,3.63624e+08,baseline
+cache-misses,272824,baseline
+cache-references,1.15782e+06,baseline
+L1-dcache-loads,3.6335e+08,baseline
+L1-dcache-load-misses,2.05862e+07,baseline
+dTLB-loads,3.6335e+08,baseline
+dTLB-load-misses,442.86,baseline
+instructions,1.48643e+09,optimized
+cycles,3.31859e+08,optimized
+cache-misses,218983,optimized
+cache-references,1.1283e+06,optimized
+L1-dcache-loads,3.63882e+08,optimized
+L1-dcache-load-misses,2.55337e+07,optimized
+dTLB-loads,3.63882e+08,optimized
+dTLB-load-misses,353.907,optimized

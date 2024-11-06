@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -g -DNDEBUG CMakeFiles/initial.dir/main.cpp.o CMakeFiles/initial.dir/matrix/matrix.cpp.o -o initial  libperf-cpp.a 
