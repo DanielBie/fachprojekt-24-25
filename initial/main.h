@@ -3,4 +3,5 @@
 
 #include <perfcpp/event_counter.h>
 
-std::string benchmark(Matrix& a, const Matrix& b, const Matrix& c, bool baseline = false, uint32_t iterations = 10);
+std::string benchmark(bool baseline = false, uint32_t iterations = 10);
+bool validate();

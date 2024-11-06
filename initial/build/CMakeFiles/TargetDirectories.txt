@@ -1,4 +1,0 @@
-/home/daniel/Data/University/Work/Teaching/WS2425/Fachprojekt/fachprojekt-24-25/initial/build/CMakeFiles/perf-cpp.dir
-/home/daniel/Data/University/Work/Teaching/WS2425/Fachprojekt/fachprojekt-24-25/initial/build/CMakeFiles/initial.dir
-/home/daniel/Data/University/Work/Teaching/WS2425/Fachprojekt/fachprojekt-24-25/initial/build/CMakeFiles/edit_cache.dir
-/home/daniel/Data/University/Work/Teaching/WS2425/Fachprojekt/fachprojekt-24-25/initial/build/CMakeFiles/rebuild_cache.dir

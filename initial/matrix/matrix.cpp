@@ -72,3 +72,22 @@ void init(Matrix &matrix) {
         }
     }
 }
+
+void copy(Matrix &source, Matrix &target) {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            target[i][j] = source[i][j];
+        }
+    }
+}
+
+bool operator==(const Matrix& a, const Matrix& b){
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            if(a[i][j] != b[i][j]){ 
+                return false;
+            }
+        }
+    }
+    return true;
+}

@@ -14,3 +14,5 @@ void zero(Matrix &result);
 void identity(Matrix &result);
 
 void init(Matrix &matrix);
+void copy(Matrix &source, Matrix &target);
+bool operator==(const Matrix& a, const Matrix& b);
