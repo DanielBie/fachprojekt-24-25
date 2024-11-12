@@ -12,16 +12,18 @@ build () {
     cd build
     cmake ..
     make
+    cd ../..
 }
 
 run () {
-    cd $1/build
+    cd $1/build/
 
     if [[ "$*" == *"-store" ]]; then
         ./$1 > ../results.csv
     else
         ./$1
     fi
+    cd ../..
 }
 
 
