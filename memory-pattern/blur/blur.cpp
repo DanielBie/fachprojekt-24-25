@@ -5,6 +5,8 @@
 #include <fstream>
 #include <ios>
 
+
+// Function to optimize
 // Applies Gaussian blur in independent vertical lines
 static void filterVertically(uint8_t *output, const uint8_t *input, const int width, const int height, const int *kernel, const int radius, const int shift) {
     const int rounding = 1 << (shift - 1);
@@ -113,8 +115,9 @@ static void filterHorizontally(uint8_t *output, const uint8_t *input, const int 
     }
 }
 
-// Applies Gaussian blur in independent vertical lines
-static void filterVertically_baseline(uint8_t *output, const uint8_t *input, const int width, const int height, const int *kernel, const int radius, const int shift) {
+
+// Baseline version, DO NOT touch
+static void baseline_filterVertically(uint8_t *output, const uint8_t *input, const int width, const int height, const int *kernel, const int radius, const int shift) {
     const int rounding = 1 << (shift - 1);
 
     for (int c = 0; c < width; c++) {
@@ -178,7 +181,7 @@ void blur(uint8_t *output, const uint8_t *input, const int width, const int heig
 
     // A pair of 1-dimensional passes to achieve 2-dimensional transform
     if(baseline){
-        filterVertically_baseline(temp, input, width, height, kernel, radius, shift);
+        baseline_filterVertically(temp, input, width, height, kernel, radius, shift);
     } else {
         filterVertically(temp, input, width, height, kernel, radius, shift);
     }
