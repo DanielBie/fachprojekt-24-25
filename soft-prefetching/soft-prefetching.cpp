@@ -3,12 +3,6 @@
 
 #include <iostream>
 #include <random>
-#include <tuple>
-
-enum BenchmarkType {
-    BASELINE,
-    SOFTWARE_PREFETCH
-};
 
 uint32_t filtered_bonus(uint32_t &bonus) {
     if (bonus < 3000) {
